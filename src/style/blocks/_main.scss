@@ -1,0 +1,186 @@
+.main{
+  flex-grow: 1;
+  background-color: var(--color-grey);
+  padding: 40px 0px 0px 71px;
+  @include desktop{
+    padding: 30px 10px 0px 20px;
+  }
+  &__container{
+    max-width: 971px;
+  }
+  &__title{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 56px;
+    @include desktop{
+      text-align: center;
+    }
+  }
+  &__block{
+    background-color: #fff;
+    border-radius: var(--border-radius-main-huge);
+    padding:37px 38px 40px 38px;
+    @include desktop{
+      padding: 30px 5px 40px 25px;
+    }
+    @include mobile{
+      overflow: scroll;
+    }
+    animation: slideIn 2s forwards;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &-search{
+      display: flex;
+      align-items: center;
+      &>input{
+        font-size: 12px;
+        color: var(--color-main-grey-text);
+        background-color: #F9FBFF;
+        border: none;
+        height: 38px;
+        padding-left: 10px;
+        outline: none;
+        border-top-right-radius: var(--border-radius-main-search); 
+        border-bottom-right-radius: var(--border-radius-main-search);
+      }
+      &>span{
+        background-color: #F9FBFF;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: var(--border-radius-main-search); 
+        border-bottom-left-radius: var(--border-radius-main-search); 
+        padding-left: 10px;
+      }
+    }
+    &-title{
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    &-signature{
+      color: var(--color-green-text);
+      font-weight: 300;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &>table{
+      width: 100%;
+      @include desktop{
+        font-size: 12px;
+      }
+    }
+    &-item{
+      text-align: start;
+      &.head{
+        color: var(--color-main-grey-text); 
+        font-weight: 300;
+        @include mobile{
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+      &>button{
+        width: 80px;
+        @include desktop{
+          width: 50px;
+          font-size: 10px;
+        }
+        @include mobile{
+          font-size: 0px;
+          max-width: 17px;
+          aspect-ratio: 1;
+        }
+        border: 1px solid #008767;
+        border-radius: var(--border-radius-main-small);
+        padding: 4px 0px;
+        color: #008767;
+        background-color: rgba(22, 192, 152, 0.38); 
+        &.inactive{
+        border: 1px solid #DF0404;
+        color: #DF0404;
+        background-color: var(--color-red); 
+        }
+      }
+    }
+    &-row{
+      position: relative;
+      height: 70px;
+      &::after{
+        content: ""; 
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 1px; 
+        background-color: #EEEEEE; 
+      }
+      &.head::after{
+        content: ""; 
+        position: absolute;
+        bottom: 0; 
+        left: -40px; 
+        width: 109.1%; 
+        height: 1px; 
+        background-color: #EEEEEE; 
+      }
+    }
+  }
+  &__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-text{
+      font-weight: 200;
+      color: var(--color-main-grey-text);
+      @include mobile{
+        font-size: 10px;
+      }
+    }
+    &-buttons{
+      display: flex;
+      gap: 10px;
+      &>span{
+        display: flex;
+        align-items: end;
+      }
+    }
+    &-button{
+      padding: 0;
+      background-color: #F5F5F5;
+      text-align: center;
+      border-radius: var(--border-radius-main-small);
+      border: 1px solid #EEEEEE;
+      color: #404B52;
+      font-size: 12px;
+      height: 24px;
+      aspect-ratio: 1;
+      &.active{
+        background-color: var(--color-blue);
+        color: #fff ;
+        border: none;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+      &:active{
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+@keyframes slideIn {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}

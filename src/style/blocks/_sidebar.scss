@@ -1,0 +1,151 @@
+.sidebar{
+  background-color: #fff;
+  @include tablet{
+    max-height: 80px;
+  }
+  &__content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+      min-height: 0vh;
+      flex-direction: row;
+      width: 100vw;
+      justify-content: space-between;
+      padding: 10px !important;
+      align-items: center;
+    }
+    padding: 39px 28px 76px 28px;
+    @include desktop{
+      padding: 35px 10px 76px 15px;
+    }
+  }
+
+  &__header{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    @include desktop{
+      gap: 5px;
+      font-size: 18px;
+    }
+    @include desktop{
+      gap: 0px;
+      font-size: 18px;
+    }
+    @include tablet{
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    &-logo>img{
+      @include mobile{
+        transform: scale(0.6);
+      }
+    }
+    margin-bottom: 68px;
+    &-title{
+      display: flex;
+      align-items: last baseline;
+      gap: 6px;
+      font-size: 26px;
+      @include mobile{
+        font-size: 0px;
+        gap: 0px;
+      }
+      
+      
+      font-weight: 500;
+    }
+    &-span{
+      font-size: 10px;
+      font-weight: 400;
+      color: #838383;
+    }
+  }
+
+  &__menu{
+    flex: 1;
+    @include tablet{
+      max-width: 30%;
+    }
+    @include mobile{
+      max-width: 50%;
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      @include tablet{
+        flex-direction: row;
+        font-size: 0;
+      }
+      gap: 18px;
+    }
+    &-link{
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      align-items: center;
+      color: var(--color-nav-grey-text);
+      border-radius: var(--border-radius-nav);
+      padding: 12px;
+      &.active{
+        background-color: var(--color-blue);
+        color: white;
+      }
+      &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.2s;
+      }
+      @include desktop{
+        max-width: 170px ;
+      }
+      @include tablet{
+        max-width: 30px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    
+  }
+
+  &__footer{
+    display: flex;
+    @include tablet{
+      display: none;
+    }
+    gap: 12px;
+    align-items: center;
+    &-text{
+      display: flex;
+      flex-direction: column;
+      &-signature{
+        color: #757575;
+        font-weight: 200;
+      }
+    }
+  }
+
+}
+
+.link{
+  &__content{
+    display: flex;
+    gap: 15px;
+    @include desktop{
+      gap: 5px;
+    }
+    align-items: center;
+  }
+  &__title{
+    @include tablet{
+      display: none;
+    }
+  }
+  &__button{
+    justify-self: end;
+    @include tablet{
+      display: none;
+    }
+  }
+}

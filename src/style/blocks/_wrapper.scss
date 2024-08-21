@@ -1,0 +1,8 @@
+.wrapper{
+  display: flex;
+  @include tablet{
+    flex-direction: column;
+  }
+  margin: 0 auto;
+  box-sizing: border-box;
+}

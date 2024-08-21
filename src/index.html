@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0 user-scalable=no, maximuum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="/src/images/logo-png.png" type="image/png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="wrapper container">
+    <div class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__header">
+          <div class="sidebar__header-logo"><img src="/src/images/logo.svg" alt="Dashboard"></div>
+          <div class="sidebar__header-title">Dashboard<span class="sidebar__header-span">v.01</span></div>
+        </div>
+        <div class="sidebar__menu">
+          <nav class="sidebar__menu-nav">
+            <ul class="sidebar__menu-list">
+              <li class="sidebar__menu-link">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/key-square.svg" alt="key-img"></div>
+                  <div class="link__title">Dashboard</div>
+                </div>
+                <div class="link__button"><img src="/src/images/grey-arrow.svg" alt="arrow"></div>
+              </li>
+
+              <li class="sidebar__menu-link">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/cube-square.svg" alt="key-img"></div>
+                  <div class="link__title">Product</div>
+                </div>
+                <div class="link__button"><img src="/src/images/grey-arrow.svg" alt="arrow"></div>
+              </li>
+
+              <li class="sidebar__menu-link active">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/user-square.svg" alt="key-img"></div>
+                  <div class="link__title">Customers</div>
+                </div>
+                <div class="link__button"><img src="/src/images/white-arrow.svg" alt="arrow"></div>
+              </li>
+
+              <li class="sidebar__menu-link">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/wallet-square.svg" alt="key-img"></div>
+                  <div class="link__title">Income</div>
+                </div>
+                <div class="link__button"><img src="/src/images/grey-arrow.svg" alt="arrow"></div>
+              </li>
+
+              <li class="sidebar__menu-link">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/discount-square.svg" alt="key-img"></div>
+                  <div class="link__title">Promote</div>
+                </div>
+                <div class="link__button"><img src="/src/images/grey-arrow.svg" alt="arrow"></div>
+              </li>
+
+              <li class="sidebar__menu-link">
+                <div class="link__content">
+                  <div class="link__image"><img src="/src/images/message-square.svg" alt="key-img"></div>
+                  <div class="link__title">Help</div>
+                </div>
+                <div class="link__button"><img src="/src/images/grey-arrow.svg" alt="arrow"></div>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-image"><img src="/src/images/footer-img.svg" alt="EvanoFoto"></div>
+          <div class="sidebar__footer-text">
+            <div class="sidebar__footer-text-title">Evano</div>
+            <div class="sidebar__footer-text-signature">Project Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__title" id="text"></div>
+        <div class="main__block">
+          <div class="main__header">
+            <div class="main__header-text">
+              <div class="main__header-title">All Customers</div>
+              <div class="main__header-signature">Active Members</div>
+            </div>
+            <div class="main__header-search"><span><img src="/src/images/search-img.svg" alt="search-img"></span><input type="text" placeholder="Search"></div>
+
+          </div>
+          <div class="main__content">
+            <table>
+              <thead>
+                <tr class="main__content-row head">
+                  <th class="main__content-item head">Customer Name</th>
+                  <th class="main__content-item head">Company</th>
+                  <th class="main__content-item head">Phone Number</th>
+                  <th class="main__content-item head">Email</th>
+                  <th class="main__content-item head">Country</th>
+                  <th class="main__content-item head">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Jane Cooper</td>
+                  <td class="main__content-item">Microsoft</td>
+                  <td class="main__content-item">(225) 555-0118</td>
+                  <td class="main__content-item">jane@microsoft.com</td>
+                  <td class="main__content-item">United States</td>
+                  <td class="main__content-item"><button>Active</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Floyd Miles</td>
+                  <td class="main__content-item">Yahoo</td>
+                  <td class="main__content-item">(205) 555-0100</td>
+                  <td class="main__content-item">floyd@yahoo.com</td>
+                  <td class="main__content-item">Kiribati</td>
+                  <td class="main__content-item"><button class="inactive">Inactive</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Ronald Richards</td>
+                  <td class="main__content-item">Adobe</td>
+                  <td class="main__content-item">(302) 555-0107</td>
+                  <td class="main__content-item">ronald@adobe.com</td>
+                  <td class="main__content-item">Israel</td>
+                  <td class="main__content-item"><button class="inactive">Inactive</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Marvin McKinney</td>
+                  <td class="main__content-item">Tesla</td>
+                  <td class="main__content-item">(252) 555-0126</td>
+                  <td class="main__content-item">marvin@tesla.com</td>
+                  <td class="main__content-item">Iran</td>
+                  <td class="main__content-item"><button>Active</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Jerome Bell</td>
+                  <td class="main__content-item">Google</td>
+                  <td class="main__content-item">(629) 555-0129</td>
+                  <td class="main__content-item">jerome@google.com</td>
+                  <td class="main__content-item">Réunion</td>
+                  <td class="main__content-item"><button>Active</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Kathryn Murphy</td>
+                  <td class="main__content-item">Microsoft</td>
+                  <td class="main__content-item">(406) 555-0120</td>
+                  <td class="main__content-item">kathryn@microsoft.com</td>
+                  <td class="main__content-item">Curaçao</td>
+                  <td class="main__content-item"><button>Active</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Jacob Jones</td>
+                  <td class="main__content-item">Yahoo</td>
+                  <td class="main__content-item">(208) 555-0112</td>
+                  <td class="main__content-item">jacob@yahoo.com</td>
+                  <td class="main__content-item">Brazil</td>
+                  <td class="main__content-item"><button>Active</button></td>
+                </tr>
+                <tr class="main__content-row">
+                  <td class="main__content-item">Kristin Watson</td>
+                  <td class="main__content-item">Facebook</td>
+                  <td class="main__content-item">(704) 555-0127</td>
+                  <td class="main__content-item">kristin@facebook.com</td>
+                  <td class="main__content-item">Åland Islands</td>
+                  <td class="main__content-item"><button class="inactive">Inactive</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="main__footer">
+            <div class="main__footer-text">Showing data 1 to 8 of  256K entries</div>
+            <div class="main__footer-buttons">
+              <button class="main__footer-button prev"><</button>
+              <button class="main__footer-button active">1</button>
+              <button class="main__footer-button">2</button>
+              <button class="main__footer-button">3</button>
+              <button class="main__footer-button">4</button>
+              <span>...</span>
+              <button class="main__footer-button">40</button>
+              <button class="main__footer-button next">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/src/script/script.js"></script>
+</body>
+</html>
