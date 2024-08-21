@@ -1,7 +1,7 @@
 .main{
   flex-grow: 1;
   background-color: var(--color-grey);
-  padding: 40px 0px 0px 71px;
+  padding: 30px 0px 0px 70px;
   @include desktop{
     padding: 30px 10px 0px 20px;
   }
@@ -10,7 +10,7 @@
   }
   &__title{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 56px;
     @include desktop{
       text-align: center;
@@ -19,9 +19,11 @@
   &__block{
     background-color: #fff;
     border-radius: var(--border-radius-main-huge);
-    padding:37px 38px 40px 38px;
+    padding:25px;
+    margin: 0 auto;
     @include desktop{
       padding: 30px 5px 40px 25px;
+      
     }
     @include mobile{
       overflow: scroll;
@@ -59,7 +61,7 @@
     }
     &-title{
       font-size: 22px;
-      font-weight: 500;
+      font-weight: 600;
       margin-bottom: 8px;
     }
     &-signature{
@@ -112,7 +114,7 @@
     }
     &-row{
       position: relative;
-      height: 70px;
+      height: 65px;
       &::after{
         content: ""; 
         position: absolute;

@@ -1,27 +1,6 @@
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Regular.woff2) format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Medium.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-SemiBold.woff2) format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 body {
   font-family: var(--font-family-base);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   background-color: rgba(235, 235, 235, 0.2470588235);
   letter-spacing: 0.5px;
@@ -192,7 +171,7 @@ svg * {
 .main {
   flex-grow: 1;
   background-color: var(--color-grey);
-  padding: 40px 0px 0px 71px;
+  padding: 30px 0px 0px 70px;
 }
 @media (max-width: 1441px) {
   .main {
@@ -204,7 +183,7 @@ svg * {
 }
 .main__title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 56px;
 }
 @media (max-width: 1441px) {
@@ -215,7 +194,8 @@ svg * {
 .main__block {
   background-color: #fff;
   border-radius: var(--border-radius-main-huge);
-  padding: 37px 38px 40px 38px;
+  padding: 25px;
+  margin: 0 auto;
   animation: slideIn 2s forwards;
 }
 @media (max-width: 1441px) {
@@ -260,7 +240,7 @@ svg * {
 }
 .main__header-title {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 .main__header-signature {
@@ -321,7 +301,7 @@ svg * {
 }
 .main__content-row {
   position: relative;
-  height: 70px;
+  height: 65px;
 }
 .main__content-row::after {
   content: "";
@@ -457,7 +437,7 @@ svg * {
   align-items: last baseline;
   gap: 6px;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   .sidebar__header-title {
@@ -535,6 +515,7 @@ svg * {
   }
 }
 .sidebar__footer-text {
+  font-weight: 500;
   display: flex;
   flex-direction: column;
 }
